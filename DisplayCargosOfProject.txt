@@ -1,0 +1,14 @@
+Scenario Name:Let's see how is it going.
+
+Participating Actor Instance(s):Jonathan-Project Leader
+
+Flow Of Events:
+
+1)Jonathan enters the WWDS site and logs in.
+2)Jonathan clicks on display my projects button sees the projects he has started as a list.
+3)Jonathan clicks on "Donate for Africa Project" and sees the information page of it.
+4)Jonathan clicks on display status of project button and sees the list of cargos that has been sent for project.
+5)Jonathan approves the cargo "123" by clicking approve cargo button since it has reached to him and he checked it.
+6)Jonathan rejects the cargo "777" by clicking reject cargo button since it has reached to him and it's empty.
+7)Jonathan reject the cargo "555" by clicking reject cargo button since it has reached to him and it has 5 blankets as it stated but the project has enough blankets.
+8)Jonathan quits the system and goes to cargo office to return the cargo.

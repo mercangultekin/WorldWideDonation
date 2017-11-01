@@ -1,0 +1,12 @@
+Scenario Name:What a Great Project!
+
+Participating Actor Instance(s):Trevor-Admin
+
+Flow Of Events:
+
+1)Trevor enters the WWDS and logs in.
+2)Trevor sees a notification on his screen and clicks on it.
+3)Trevor sees a page which contains a list of project names which are waiting for an approval.
+4)Trevor clicks on "Donate for Africa Project".
+5)Trevor reads the information written about the project and likes it.
+6)Trevor clicks on Approve Project button and sees a message that says "Project has been created."

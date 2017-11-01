@@ -1,0 +1,12 @@
+Scenario Name:What is this?
+
+Participating Actor Instance(s):Trevor-Admin
+
+Flow Of Events:
+
+1)Trevor enters the WWDS and logs in.
+2)Trevor sees a notification on his screen and clicks on it.
+3)Trevor sees a page which contains a list of project names which are waiting for an approval.
+4)Trevor clicks on "Let's kill our teacher!".
+5)Trevor reads the information written about the project and doesn't like it.
+6)Trevor clicks on Reject Project button and sees a message that says "Project has been rejected."

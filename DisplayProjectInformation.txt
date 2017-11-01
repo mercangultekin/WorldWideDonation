@@ -1,0 +1,10 @@
+Scenario Name:Looking at Site
+
+Participating Actor Insatance(s):Johanna:Visitor
+
+Flow Of Events:
+
+1)Johanna enters the WWDS web site.
+2)Johanna sees the project called "Donate for Africa".
+3)She gets very interested about the project and clicks on the cover image of project.
+4)She sees the projects information and more images of project.
