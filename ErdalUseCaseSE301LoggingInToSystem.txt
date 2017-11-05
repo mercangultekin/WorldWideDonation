@@ -1,0 +1,12 @@
+Use Case : LoginInToSystem
+Participating Actors : Initiated by Visitor
+
+Entry Condition : Visitor must be "Signed-Up" to the WWDS system.
+
+Flow of Events : 
+1)  Visitor wants to use WWDS System's functions. Either by system or by  the WWDS system, user being directed to use login function.
+2)  WWDS system pops up a "Log-In" page.
+3) Visitor fills out those credentials. "Username" and "Password"
+4) WWDS system check those credentials. After control, WWDS close the pop-up page and reload the WWDS page.  Visitor become "User" or "Project Leader". "Account setting" option and  "Log-Out" option is enabled. 
+
+Exit Condition : WWDS System accept credentials written by Visitor.

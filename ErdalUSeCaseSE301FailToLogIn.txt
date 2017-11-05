@@ -1,0 +1,13 @@
+Use Case Name : FailToLogIn
+Participating Actor : Initiated by Visitor
+
+Entry Condition : This use case extends the "LoggingInToSystem" 
+
+Flow Of Events : 
+1)  Visitor wants to use system functions. Either by system or by  the WWDSsystem, user being directed to use login function.
+2)  WWDS system pops up a "Log-In" page.
+3) Visitor fills out those credentials. "Username" and "Password"
+4) WWDS system check those credentials. After control, WWDS rejects those credentials.
+
+
+Exit Condition :  User cancel logging-in process.

@@ -1,0 +1,17 @@
+Use Case : EditProject
+Participating Actors : Initiated by ProjectLeader
+                                      Participated by Admin
+
+Flow of Events : 
+
+1)   ProjectLeader clicks to "My Account" and being directed to his account page, containig  "My Account Settings", "My Projects" and "Reset Password". Then he selects "My Projects"
+    2) WWDS directs the ProjectLeader to her project page and shows her  projects. 
+3) ProjectLeader selects one of her project shown in the "My Projects" page.
+    4) WWDS directs ProjectLeader to project page which is page of the project that she has chosen in “My Projects” page.
+5) In the project page, she selects "Edit Project".
+    6) WWDS reload the page. Make "Project Page", "Project Description" and "Items Needed for The Project" become editable. "Save Edit" option become available and "edit Project" option disabled.
+7) She edits her project. Then she select "Save Project."
+    8) WWDS reload the page. "Project Page", "Project Description" and "Items  Needed for The Project" become uneditable. "Save Edit" option disabled and "Edit Project" option enabled.
+
+Entry Condition : ProjectLeader must be "Logged-In" to the WWDS system  
+Exit Condition :  Admin has to accept changes made by Project Leader has done to that project page. 

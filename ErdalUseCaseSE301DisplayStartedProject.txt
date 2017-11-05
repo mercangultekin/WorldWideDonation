@@ -1,0 +1,12 @@
+Use Case Name: DisplayStartedProject
+Participating Actors : Initiated by ProjectLeader
+Communicates With WWDS
+Entry Condition : ProjectLeader must logged-on to the system 
+Flow of Events : 
+1) ProjectLeader clicks to "My Account”. 
+2) WWDS direct ProjectLeader to his accout page and in ProjectLeader's account page, ProjectLeader will see "My Account Settings", "My Projects" and "Reset Password" options.
+3) ProjectLeader selects “My Projects” option.
+4) WWDS direct ProjectLeader to his project page containing projects he has started in past. 
+Exit Condition : ProjectLeader done viewing his project page and go other page.
+ 
+
