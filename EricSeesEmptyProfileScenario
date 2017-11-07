@@ -1,0 +1,13 @@
+Scenario Name:Display Profile
+
+Participating Actor Instance(s):Eric:User
+
+PreCondition(s):Eric logs into system successfully.
+
+Flow of Events;
+
+1)Eric clicks on "MyProfileButton".
+2)System displays Eric's profile page.
+3)Eric sees three empty lists which are sayin "You have no ongoning donations.","You haven't donated to any projects yet.",
+ "You haven't started any projects yet." respectively.
+ 
