@@ -1,5 +1,5 @@
 Usecase Name         : Login
-Participating Actors : Initiated by User
+Participating Actors : Initiated by User or Admin
 Entry Condition      : User must be "Signed-Up" to the WWDS.
 
 Flow of Events : 
