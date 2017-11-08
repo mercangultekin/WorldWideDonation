@@ -1,10 +1,10 @@
 Usecase Name         : Login
 Participating Actors : Initiated by User or Admin
-Entry Condition      : User must be "Signed-Up" to the WWDS.
+Entry Condition      : User must be Signed-Up to the WWDS.
 
 Flow of Events : 
-1)  User wants to use WWDS System's functions. Either by system or by  the WWDS system, user being directed to use login function.
-2)  WWDS displays a "Log-In" page.
+1)  User clicks Login button.
+2)  WWDS displays a Login page.
 3)  User fills out following credentials. “Username" and "Password"
 4)  WWDS checks those credentials.
 5)  WWDS closes the login form and reloads the WWDS page. 
