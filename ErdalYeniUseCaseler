@@ -1,30 +1,18 @@
 
- Use Case : CancelToLogIn
-Participating Actors : Initiated by Visitor
-Flow of Events : 
-1)  Visitor wants to use system functions. Either by system or by  the WWDSsystem, user being directed to use login function.
-  2)  WWDS system displays a "Log-In" page.
-3) Visitor fills out those credentials. 
-  "Username" and "Password" but then visitor selects "cross" sign placed in the upper right side of the display screen.
 
-Entry Condition : This use case extends the "LoggingInToSystem" 
-Exit Condition :  Register form will be closed by Visitor and returns to WWDS page.
-
-Use Case Name: DisplayStartedProject
-Participating Actors : Initiated by User
+Use Case Name: DisplayStartedProjects
+Participating Actors : Inherited from Display Profile Usecase
 Communicates With WWDS
-Entry Condition : User should logged-on to the system 
+Entry Condition : Inherited from Display Profile Usecase 
 Flow of Events : 
-1) ProjectLeader clicks to "My Account". 
-  2) WWDS direct User to his accout page and in User's account page, User will see "My Account Settings", "My Projects" and "Reset Password" options.
-3) User selects "My Projects" option.
-  4) WWDS direct User to his project page containing projects he has started in past. 
-Exit Condition : User done viewing his project page and go other page.
+1) User clicks "My Projects Button".
+  2) System displays the list of the project that user has started.  
+Exit Condition : User successfully views the list of the projects that s/he started.
  
 
 Use Case : EditProject
 Participating Actors : Initiated by User
-                                      Participated by Admin
+                                      Aprroved by Admin
 
 Flow of Events : 
 
@@ -35,10 +23,11 @@ Flow of Events :
 5) In the project page, she selects "Edit Project".
     6) WWDS reload the page. Make "Project Page", "Project Description" and "Items Needed for The Project" become editable. "Save Edit" option become available and "edit Project" option disabled.
 7) She edits her project. Then she select "Save Project."
-    8) WWDS reload the page. "Project Page", "Project Description" and "Items  Needed for The Project" become uneditable. "Save Edit" option disabled and "Edit Project" option enabled.
-
+    8) System send notification message to admin
+9) Admin controls modification done to the project. Admin sends an approval message to system.
+    10) WWDS reload the page. "Project Page", "Project Description" and "Items  Needed for The Project" become uneditable. "Save Edit" option disabled and "Edit Project" option enabled.
 Entry Condition : User must be "Logged-In" to the WWDS system  
-Exit Condition :  Admin has to accept changes made by the User done to that project page. 
+Exit Condition :  Project must approved by Admin
 
 
 Use Case Name : FailToLogIn
@@ -72,15 +61,12 @@ Exit Condition : WWDS System accept credentials written by Visitor.
 
 
 UseCase Name : DisplayProfilePage
-Participating Actors : User as Participant
-
+Participating Actors : User Inıtıates
 Flow Of Events : 
-Entry Condition : User must be logged on to the WWDS system.
-1) User selects "My Profile" located on front page and enters her account page.
-       2) WWDS system directs User to profile page. Display tabs such as account settings,
-	   "Ongoing Donations" tab,"Completed Donations","Projects Started" ( or "Display Projects")
-Exit Condition : User log-off from the system
-
+Entry Condition : User must be logged in to the WWDS system.
+1) User clicks "My Profile" button at homepage.
+       2) WWDS system displays User to his/her profile page.
+	   
 
 Usecase Name : DisplayInformationAboutOngoingDonation
 Entry Condition: User should be logged in
