@@ -1,0 +1,9 @@
+Use Case            		 : Logout
+Participating Actors 	   : Initiated by User or Admin
+Entry Condition          : User must be Logged to the WWDS.
+
+Flow of Events : 
+1)  User clicks Logout button while he/she is on any page.
+2)  System reloads home page of WWDS.
+
+Exit Condition : User logouts successfully.
