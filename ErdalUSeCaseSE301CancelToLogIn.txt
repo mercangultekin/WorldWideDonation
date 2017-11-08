@@ -1,9 +1,0 @@
- Use Case : CancelToLogIn
-Participating Actors : Initiated by Visitor
-Flow of Events : 
-1)  Visitor wants to use system functions. Either by system or by  the WWDSsystem, user being directed to use login function.
-        2)  WWDS system pops up a "Log-In" page.
-3) Visitor fills out those credentials. "Username" and "Password" but then visitor selects "cross" sign placed in the upper right side of the login form.
-
-Entry Condition : This use case extends the "LoggingInToSystem" 
-Exit Condition :  Register form will be closed by Visitor and returns to WWDS page.
