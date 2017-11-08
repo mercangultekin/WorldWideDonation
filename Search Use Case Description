@@ -1,0 +1,16 @@
+Use Case Name:Search
+
+Participating Actor(s):Initiated by Visitor or User
+
+Entry Condtion:The actor enters the WWDS.
+
+Exit Condition:The actor sees the results of his/her search.
+
+Flow Events:
+
+1)The actor types a search keyword to search.
+  2)System searches this keyword both in project names and categories.
+  3)System displays the search results.
+  
+  
+  
