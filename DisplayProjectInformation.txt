@@ -1,13 +1,13 @@
 Use Case Name:Display Project Information
 
-Participating Actor(s):User-Initiates
+Participating Actor(s):Initiated by Visitor or User
 
-Entry Condition:User must be logged in and there is at least one project approved in the system.
+Entry ConditionThere exists at least one approved project in the system.
 
 Exit Condition:Display a project's page.
 
 Flow of Events:
 
-1)User clicks on a project.
+1)The actor clicks on a project.
 
 	2)System displays the information page of that project.
