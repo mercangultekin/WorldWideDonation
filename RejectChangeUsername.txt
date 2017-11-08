@@ -1,0 +1,10 @@
+UseCase : RejectUserName
+Participating Actors : User as Participant
+Entry Condition: RejectUserName extends Login
+ 
+Flow of Events : 
+1) User clicks on "log-in" button
+  2) System displays a log-in form 
+3) User fills out credentials in the log-in form 
+  4) System checks out credentials and rejcet username
+Exit Condition: 

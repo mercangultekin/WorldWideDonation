@@ -1,0 +1,7 @@
+UseCase Name : DisplayProfilePage
+Participating Actors : User Inýtýates
+Entry Condition : User must be logged in to the WWDS system.
+Flow Of Events : 
+1) User clicks "My Profile" button at homepage.
+       2) WWDS system displays User to his/her profile page.
+	   

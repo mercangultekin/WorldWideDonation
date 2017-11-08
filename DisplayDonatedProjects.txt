@@ -1,0 +1,10 @@
+Usecase Name : DisplayDonatedProjects
+Participating Actors: User as Participant
+
+Entry Condition: User should be logged in
+                 Inherited from DisplayProfilePage Usecase
+Flow of Events : 
+1) User clicks on the "Donated Projects" 
+   2) WWDS displays the list of projects that User has made donation.
+
+Exit Condition :  
