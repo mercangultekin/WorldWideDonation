@@ -1,17 +1,14 @@
 Usecase Name : DisplayOngoingDonations
 Participating Actors : User as Participant
 
-Entry Condition : User should made a donation entry to the system, 
+Entry Condition : User should be logged in
+                  User should made a donation entry to the system, 
                   have donation ID and then get the CargoID from the cargo company. 
-				  User should be logged in and already done a donation.
-				  Inherited from Display Profile Usecase
 
 Flow Of Events : 
-1) User clicks on "My Profile" button located on front page and enters her account page.
-       2) WWDS system directs User to profile page. Display tabs such as account settings,
-	  "Ongoing Donations" button,"Completed Donations","Projects Started" ( or "Display Projects")
-3) User selects "Ongoing Donations" button
-       4) WWDS system shows a table, containing informations about ongoing donations.
+
+1) User selects "Ongoing Donations" button
+       2) WWDS system shows a table, containing informations about ongoing donations.
 
 Exit Condition : User done viewing "Ongoing Donations Table" and either selects other tab or User returns to frontpage.
-Quality Requirement : This use case includes DisplayInformationAboutOngoingDonation
+Quality Requirement : This use case includes DisplayProfile use case. When DisplayProfile use case initiated, user can see "DisplayOngoingDonations", "DisplayMyFinishedProjects", "DisplayDonatedProjects", "DisplayStartedProjects" use cases available.
