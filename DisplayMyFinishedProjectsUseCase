@@ -1,0 +1,16 @@
+Usecase Name : DisplayMyFinishedProjectsUseCase
+Participating Actors : User as Participant
+
+Entry Condition : User clicks on "Display Profile"
+
+Flow of Events : 
+1) User clicks on the "My Finished Projects" 
+   2) WWDS displays the list of project that are finished. When items needed for
+   the project is satisfied, project is finished. Finished project added to DiplayMyFinishedProjects.
+
+Exit Condition : User will see his/her finished projects successully. 
+
+Quality Requirements : This use case includes "DisplayProfile" use case. When user clicks on "Display Profile 
+button",  user will able to click on "Display Ongoing Donations", "Display My Finished Projects", "Display Donated Projects",
+"Display Started Projects"
+   
