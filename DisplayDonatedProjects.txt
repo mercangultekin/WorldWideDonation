@@ -1,7 +1,7 @@
 Usecase Name : DisplayDonatedProjects
 Participating Actors: User as Participant
 
-Entry Condition: User should be logged in to system
+Entry Condition: User clicks on "Display Profile"
                  
 Flow of Events : 
 1) User clicks on the "Donated Projects" 
