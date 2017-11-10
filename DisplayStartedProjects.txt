@@ -1,9 +1,11 @@
 
 Use Case Name: DisplayStartedProjects
-Participating Actors : Inherited from Display Profile Usecase
+Participating Actors : User as initiator
 Communicates With WWDS
-Entry Condition : Inherited from Display Profile Usecase 
+Entry Condition : User should logged in
 Flow of Events : 
 1) User clicks "My Projects Button".
   2) System displays the list of the project that user has started.  
 Exit Condition : User successfully views the list of the projects that s/he started.
+Quality Requirements : This use case includes "DisplayProfile". When "DisplayProfile" initated user can view his/her 
+profile page including "DisplayOngoingDonations","DisplayMyFinishedProjects","DisplayDonatedProjects","DsiplayStartedProjects"
