@@ -1,10 +1,14 @@
 Usecase Name : DisplayDonatedProjects
 Participating Actors: User as Participant
 
-Entry Condition: User should be logged in
-                 Inherited from DisplayProfilePage Usecase
+Entry Condition: User should be logged in to system
+                 
 Flow of Events : 
 1) User clicks on the "Donated Projects" 
    2) WWDS displays the list of projects that User has made donation.
 
-Exit Condition :  
+Exit Condition : User successfully display the list of his/her projects: 
+
+Quality Requirements : This use case includes "DisplayProfile" use case. When user clicks on "Display Profile 
+button",  user will able to click on "Display Ongoing Donations", "Display My Finished Projects", "Display Donated Projects",
+"Display Started Projects"
