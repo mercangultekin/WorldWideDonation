@@ -2,9 +2,9 @@
 Use Case Name: DisplayStartedProjects
 Participating Actors : User as initiator
 Communicates With WWDS
-Entry Condition : User should logged in
+Entry Condition : User should click on "Display Profile"
 Flow of Events : 
-1) User clicks "My Projects Button".
+1) User clicks "Display Started Projects".
   2) System displays the list of the project that user has started.  
 Exit Condition : User successfully views the list of the projects that s/he started.
 Quality Requirements : This use case includes "DisplayProfile". When "DisplayProfile" initated user can view his/her 
