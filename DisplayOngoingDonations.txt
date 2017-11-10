@@ -1,7 +1,7 @@
 Usecase Name : DisplayOngoingDonations
 Participating Actors : User as Participant
 
-Entry Condition : User should be logged in
+Entry Condition : User should click on "DisplayProfile"
                   User should made a donation entry to the system, 
                   have donation ID and then get the CargoID from the cargo company. 
 
