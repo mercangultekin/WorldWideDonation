@@ -1,21 +1,24 @@
 Use Case : EditProject
 Participating Actors : Initiated by User
                                       Aprroved by Admin
+Prerequisite Condition : User should initiate DisplayProfile
+                         User should initiate DisplayStartedProjects
+			 User should initiate DisplayProjectInformationForPJ
 
 Flow of Events : 
 
-1)   User clicks to "My Account" and being directed to his account page, containig  "My Account Settings", "My Projects" and "Reset Password". Then he selects "My Projects"
-    2) WWDS directs the User to her project page and shows her  projects. 
-3) User selects one of her project shown in the "My Projects" page.
-    4) WWDS directs User to project page which is page of the project that she has chosen in "My Projects" page.
-5) In the project page, she selects "Edit Project".
-    6) WWDS reload the page. Make "Project Page", "Project Description" and "Items Needed for The Project" become editable. "Save Edit" option become available and "edit Project" option disabled.
-7) She edits her project. Then she clicks on "Save Project."
-    8) System send notification message to admin
-9) Admin clicks on "show notfication" to see modification has been done to the project. 
-    10) System displays the modified project page to admin
-11) Admin clicks "Approve" button
-    12) WWDS reload the page. "Project Page", "Project Description" and "Items  Needed for The Project" become uneditable. 
-	     "Save Edit" option disabled and "Edit Project" option enabled.
+1)   User clicks to one of the started projects.
+    2) WWDS directs the User to her project page and shows his/her  projects to be edited. 
+3) User selects one of his/her started project.
+    4) WWDS directs User to project page with editing option for each fields in the "DisplayProjectInformation".
+     WWDS reload the page. Make "Project profile", "Project Description","Items Needed for The Project"," Profile Pictures"
+     become editable. "Save Edit" option become available.
+5) She edits his/her project. Then he/she clicks on "Save Project."
+    6) System send notification message to admin
+7) Admin clicks on "show notfication" to see modification has been done to the project. 
+    8) System displays the modified project page to admin
+9) Admin clicks "Approve" button
+    10) WWDS reload the page with the new information for the project.
+11) Admin reuploads the project which is edited.
 Entry Condition : User must be "Logged-In" to the WWDS system  
-Exit Condition :  Project must approved by Admin
+Exit Condition :  VerifyEdit use case should be initiated by the admin.
