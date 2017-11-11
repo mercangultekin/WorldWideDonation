@@ -6,6 +6,6 @@ Flow of Events :
 1) Visitor clicks on "sing-up" button
    2) System displays "sing-up" form
 3) Vistor fills his/her credentials. Then clicks on "sign-up" button 
-   4) System checks the sign-up form and sign the Visitor as User.
+   4) System checks the sign-up form and sign the Visitor as User and reloads the homepage.
 
 Exit Condition : User signed-up to the system successfully
