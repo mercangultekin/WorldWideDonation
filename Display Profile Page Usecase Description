@@ -7,4 +7,4 @@ Flow of Events :
 2)  User clicks My Profile Page button.
 3)  WWDS displays User to His/Her Profile Page.
 
-Exit Condition : User should be successfully log-in to WWDS system
+Exit Condition : User should be successfully display his/her profile page
