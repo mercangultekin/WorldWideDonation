@@ -1,7 +1,7 @@
 Usecase Name : DisplayMyFinishedProjectsUseCase
 Participating Actors : User as Participant
 
-Entry Condition : User clicks on "Display Profile"
+Entry Condition : User clicks on "Display Profile" first.
 
 Flow of Events : 
 1) User clicks on the "My Finished Projects" 
