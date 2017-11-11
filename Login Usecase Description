@@ -7,6 +7,6 @@ Flow of Events :
 2)  WWDS displays a Login page.
 3)  User fills out following credentials. “Username" and "Password"
 4)  WWDS checks those credentials.
-5)  WWDS closes the login form and reloads the WWDS page. 
-
+5)  WWDS closes the login form and reloads the WWDS page. "Start Project","Edit my project","Donate","Logout","Display Profile", 
+"Search","Display Ongoing Donations","Display My Active Projects" enabled and Sign-in is disabled.
 Exit Condition : User logins successfully.
