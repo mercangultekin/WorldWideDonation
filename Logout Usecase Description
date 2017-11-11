@@ -4,6 +4,7 @@ Entry Condition          : User must be Logged to the WWDS.
 
 Flow of Events : 
 1)  User clicks Logout button while he/she is on any page.
-2)  System reloads home page of WWDS.
+2)  System reloads home page of WWDS. "Sign-up" is enabled and "Start Project","Edit my project","Donate","Logout","Display Profile",
+"Search","Display On going Donations","Display My Active Projects" are disabled.
 
 Exit Condition : User logouts successfully.
