@@ -1,35 +1,14 @@
-Use Case Name:Display Cargo's of Project
+Use Case Name:Display Cargo List of Project
 
-Participating Actor(s):Project Leader-Initiates
+Participating Actor(s):User-Initiates
 
 Entry Condition(s):
-1)User must be logged in.
-2)User has to be started at least one approved project to be considered as a project leader.
-3)Project Leader is displaying information page of one of his/her projects.
+1)User must first use Display Started Projects Use Case
 
-Exit Condition:Approve a cargo.
+Exit Condition:Display the list of cargos sent for this project.
 
 Flow of Events:
 
-1)Project leader clicks on "Display Cargos Button" in a projects page.
-	2)System display the list of cargos that sent for this project in two lists as sent and delivered.
-3)Project leader cliks "Display Cargo Informations Button" of one of the cargos which is in the delivered list.
-	4)System displays the items that should be in the cargo.
-5)Project leader clicks on "Approve Cargo" button.
-	6)System closes the informations of cargo and displays a message that says "Cargo is approved".
-7)Project leader clicks on "OK" button.
-	8)System closes the message and displays the list of cargos again.  
-
-
-
-Alternative Flows:
-
-5.a)Project leader clicks on "Reject Cargo Button".
-	6.a)System closes the informations of cargo and displays a message that says "Cargo is rejected".The rest is same.
-	
-Exceptions:
-
-2.a)There is no cargo for this project so the list is empty.Use case ends here.
-2.b)There is no cargo "delivered" so project leader can't approve anything.Use case ends here.
-
-8.a)Theres no cargo left to display so system displays an empty list.
+1)User clicks on "Display Cargo List Button" in the list of his/her started projects
+	2)System displays the list of cargos that sent for this project in two lists as sent and delivered.
+ 
