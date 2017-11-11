@@ -1,13 +1,15 @@
 Use Case : EditProject
 Participating Actors : Initiated by User
                                       Aprroved by Admin
-Prerequisite Condition : User should initiate DisplayProjectInformation as project leader.
-                         
+Prerequisite Condition : User should logged-in and select "Edit My Active Project" button.
+                       
        
 Flow of Events : 
  
-1) User selects one of his/her started project.
-    2) WWDS directs User to project page with editing option for each fields in the "DisplayProjectInformation".
+1) User clicks on "Edit project" button.
+    2) WWDS system direct user to list of projects to be edited.
+ 3) User clicks on the "project link buttton to be edited".
+    4) WWDS directs User to project page with editing option for each fields in the "DisplayProjectInformation".
      WWDS reload the page. Make "Project Profile pPictures", "Project Description","Items Needed for The Project"," Project Pictures"
      become editable. "Save Edit" option become available.
 5) She edits his/her project. Then he/she clicks on "Save Project."
