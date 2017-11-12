@@ -1,0 +1,10 @@
+Scenario Name : Default Login Failure
+Participating Actor Instances : Laura : User
+Flow Of Events : 
+1) Laura opens up his computer. 
+2) She opens his browser, writes the World Wide Donation Manager's url to browser's searchbox and enters the web site of the World Wide Donation.
+3) Since Laura entered the web site of World Wide Donation System's web site. Laura decides to log-in.  
+4) Laura clicks on "login button"
+5) To login Laura need to enters his username and password. After she entered her credentials, system check her credentials. 
+6) Since Laura either didn't singed-on to the system before or she entered wrong 
+credentials, Laura won't going to login to the system
