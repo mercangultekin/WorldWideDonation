@@ -6,9 +6,12 @@ Flow of Events :
 1) Nina logs-in to WWDS system.
 2)  WWDS system "Start Project","Edit my project","Donate","Logout","Display Profile", 
 "Search","Display Ongoing Donations","Display My Active Projects" options are enabled and "Sign-in" option is disabled.
-3) User selects "Display Ongoing Donations" button
-4) WWDS system shows a list, containing informations about ongoing donations.
-5) User clicks on one of the ongoing donation made to a project.
-6)WWDS system display form asking User to fill cargoID
-7) User fills out the form writing cargoID.
-8)WWDS does the validation. Then shows the cargo information of User's donation given to project selected by user.
+3) User selects "Display Profile" option.
+4) In the "Display Profile page", WWDS view "Display Donated Projects", "Display My Finished Projects" and "Display Ongoing Donations"
+to be selected by User.
+5) User selects "Display Ongoing Donations"
+6) WWDS system shows a list, containing informations about ongoing donations.
+7) User clicks on one of the ongoing donation made to a project.
+8)WWDS system display form asking User to fill cargoID
+9) User fills out the form writing cargoID.
+10)WWDS does the validation. Then shows the cargo information of User's donation given to project selected by user.
