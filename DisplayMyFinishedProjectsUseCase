@@ -10,7 +10,4 @@ Flow of Events :
 
 Exit Condition : User will see his/her finished projects successully. 
 
-Quality Requirements : This use case includes "DisplayProfile" use case. When user clicks on "Display Profile 
-button",  user will able to click on "Display Ongoing Donations", "Display My Finished Projects", "Display Donated Projects",
-"Display Started Projects"
-   
+
