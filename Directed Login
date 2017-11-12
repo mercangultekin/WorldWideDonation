@@ -1,0 +1,10 @@
+Scenario Name : Directed Login
+Participating Actor Instances : Elizabeth : User
+Flow Of Events : 
+1) Elizabeth opens up his computer. s                    operating system .
+2)  She opens up her browser, writes World Wide Donation Manager's url to browser's searchbox and enters the web site of the World Wide Donation.
+3) Since Elizabeth entered the web site of World Wide Donation System's web site. Elizabeth decides to check out new project.  
+4) While Elizabeth checking out, Elizabeth visits a project page. 
+5) After Elizabeth visits a project page, she decides to donate to the project.
+6) Since Elizabeth didn't logged in to the system, WWDS system displays "log-in" form.
+7) Elizabeth either login to the WWDS system or Elizabeth needs to be sign-in to the system to able to log-in to WWDS system.
