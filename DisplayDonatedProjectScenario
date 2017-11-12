@@ -1,0 +1,9 @@
+Scenario name : DisplayDonatedProjectScenario
+Participant Instances : Jane : user
+
+Flow of events: 
+1) Jane logs-in to the system.
+2) She clicks on "My Profile" button.
+3) WWDS view Jane's profile page to Jane.
+4) She clicks on "Display Donated Projects"
+5)  WWDS displays the list of projects that Jane made donation.
