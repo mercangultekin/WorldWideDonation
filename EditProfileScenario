@@ -1,0 +1,10 @@
+Scenario Name : EditProfileScenario
+Participating Actors Instances: Nick : User
+
+Flow of events : 
+1) Nick logs-in to WWDS system. 
+2) Nick clicks on "Display My Profile" option.
+3) WWDS directs user to his account page.
+4) User clicks on "Edit profile" button.
+5) WDDS system displays a form. Nick can change his password or Nick can change his email address.
+6) Nick enters his new password and clicks on "Accept Changes" button.
