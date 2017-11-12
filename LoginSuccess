@@ -1,0 +1,16 @@
+Scenario Name : Default Login Success
+Participating Actor Instances : Logan : User
+Flow Of Events : 
+1) Logan opens up his computer. He opens up his browser
+2) After he logged on, he opens his browser, writes the World Wide Donation Manager's url
+to browser's searchbox and enters the web site of the World Wide Donation.
+3) Since Logan entered the World Wide Donation System's web site Logan decides to log-in.  
+4) Logan clicks to "log-in button".
+6)Since he didn't logged on to system yet so when he clicked to login button, WWDS displays "login form".
+7) To login Logan needs to enter his username and password. After he entered credentials, system checks Logan's credentials.
+8) Since Logan singed-on to the system before, Logan will be login to system. 
+9) On the website page, "Start Project","Edit my project","Donate","Logout","Display Profile", 
+"Search","Display Ongoing Donations","Display My Active Projects" buttons are enabled and 
+"Sign-in" button is disabled.
+
+
