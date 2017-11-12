@@ -6,8 +6,8 @@ Flow of Events :
 2) "Start Project","Edit my project","Donate","Logout","Display Profile", 
 "Search","Display Ongoing Donations","Display My Active Projects" enabled and Sign-in is disabled.
 3) Larry selects "Display Profile".
-4) WWDS system directs User to profile page. Display tabs such as "Edit Profile" button,
-	   "Display Ongoing Donations" button, "Display My Finished Projects" button,"Display Donated Projects" button. 
+4) WWDS system directs User to profile page. Display tabs such as "Edit Profile" option,
+	   "Display Ongoing Donations" button, "Display My Finished Projects" option,"Display Donated Projects" option. 
 5) Larry selects "Display Finished Projects"
 6) WWDS displays the list of project that are finished. When items needed for
    the project is satisfied, project is finished. Finished project added to DiplayMyFinishedProjects.
