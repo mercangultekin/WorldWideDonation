@@ -1,0 +1,18 @@
+Scenario Name : Successful Edit Scenario
+Participating Actor Instances : Jane : User
+                                Adam : Admin
+Flow Of Events : 
+1) Jane opens her browser and enters the url of WWDS website to browser's search box.
+2) She logs-in to WWDS system. 
+3) "Start Project","Edit my project","Donate","Logout","Display Profile", "Search",
+"Display Ongoing Donations","Display My Active Projects" buttons become enabled and "Sign-in" button is disabled.
+4) She clicks on "Edit My Project" button. 
+5) WWDS system direct user to list of projects to be edited. She clicks on of her project to edit called "Hurricane Victims Donation".
+6)  WWDS opens her "Hurricane Victims Donation" donation page to be edited. Make "Project Profile Picture", 
+"Project Description","Items Needed for The Project"," Project Pictures" are editable. "Save Edit" option button is available.
+7) Jane uploads new Project Profile Picture to her project.
+8) WWDS system refresh the page with new profile picture for preview.
+9) After Jane satisfied with her change(s), Jane selects "Save Edit".
+10) WWDS send a nortification to Adam. After Adam view his nortification, he views the modified "Hurricane Victims Donation" page.
+11) Adam select on "Approve Changes".
+12) System reuploads the project to WWDS system.
