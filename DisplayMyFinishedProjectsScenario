@@ -1,0 +1,7 @@
+Scenario Name : DisplayMyFinishedProjectsScenario
+Participating Actors : User as Participant
+
+Flow of Events : 
+1) User logs-in to WWDS system.
+   2) WWDS displays the list of project that are finished. When items needed for
+   the project is satisfied, project is finished. Finished project added to DiplayMyFinishedProjects.
