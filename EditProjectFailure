@@ -1,0 +1,19 @@
+Scenario Name : Failure Edit
+Participating Actor Instances : Kim : User
+                                Cherie : Admin
+Flow Of Events : 
+1) Kim writes the World Wide Donation Manager's url to browser's searchbox and enters the web site of the World Wide Donation.
+2) After Kim entered the web site of World Wide Donation System's web site. Kim decides to login
+3)  After Kim logged in to the WWDS system, he selects "Edit Project".
+4) WWDS system direct user to list of projects to be edited. 
+6) In "Projects" page, WWDS will list Kim's projects projects to be edited.   
+7) Kim selects one of his projects called called "Earthquake Victims Donation"
+8)   WWDS opens his "Earthquake Victims Donation" donation page to be edited. Make "Project Profile Picture", 
+"Project Description","Items Needed for The Project"," Project Pictures" are editable. "Save Edit" option button is available.
+9) Kim changes the project description. 
+10) WWDS system refresh the page with new profile picture for preview.
+11) After Kim is satisfied with his change(s), Kim selects "Save Edit".
+12) WWDS send a nortification to Adam. After Adam view his nortification, he views the modified "Hurricane Victims Donation" page.
+13) Adam selects on "Disapprove Changes". Because there is an error in the project description. (It could be typo, misapporiate project 
+description etc...)
+14) WWDS system reloads the "Earthquake Victims Donation" to be edited again to Kim
