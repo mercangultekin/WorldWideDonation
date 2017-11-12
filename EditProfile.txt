@@ -1,4 +1,4 @@
-UseCase : ResetPassWord
+UseCase : EditProfile
 Participating Actors : User as Participant
 Entry Condition: User should be logged in
                  User clicks on "Display Profile"
