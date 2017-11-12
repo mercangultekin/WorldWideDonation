@@ -7,7 +7,7 @@ Flow of Events :
 1) User enters his account page.
         2)WDS system directs User to profile page. Display tabs such as "Edit Profile" button,
 	   "Display Ongoing Donations" button, "Display My Finished Projects" button,"Display Donated Projects" button.
-3) User clicks on "account settings" button.
+3) User clicks on "Edit Profile" button.
         4)WWDS displays a form. In the form, WWDS ask about new password and new email address.
 5) User enters the new information
        
