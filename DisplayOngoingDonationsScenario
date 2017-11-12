@@ -1,0 +1,14 @@
+Scenario Name : DisplayOngoingDonationsScenario
+Participating Actor Instances : Nina : User
+
+Flow of Events : 
+
+1) Nina logs-in to WWDS system.
+2)  WWDS system "Start Project","Edit my project","Donate","Logout","Display Profile", 
+"Search","Display Ongoing Donations","Display My Active Projects" options are enabled and "Sign-in" option is disabled.
+3) User selects "Display Ongoing Donations" button
+4) WWDS system shows a list, containing informations about ongoing donations.
+5) User clicks on one of the ongoing donation made to a project.
+6)WWDS system display form asking User to fill cargoID
+7) User fills out the form writing cargoID.
+8)WWDS does the validation. Then shows the cargo information of User's donation given to project selected by user.
