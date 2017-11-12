@@ -1,0 +1,9 @@
+Scenario Name : Display Started Projects
+Participating Actor Instances : Dan : User
+                                                 
+Flow Of Events : 
+ 1) Dan opens up his computer.
+2)  He opens up his browser, writes the World Wide Donation Manager's url to browser's searchbox and enters the web site of the World Wide Donation.
+3)  Dan decides to login
+4)  After Dan logged in, he selects "Display My Active Projects"
+6) WWDS shows a list of project Dan has been started.
