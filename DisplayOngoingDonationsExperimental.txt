@@ -8,7 +8,7 @@ Entry Condition : "Complete Donation" use case should initiated.
 
 Flow Of Events : 
 
-1) User selects "Ongoing Donations" button
+1) User selects "Ongoing Donations button"
        2) WWDS system shows a table, containing informations about ongoing donations.
 3) User clicks on one of the ongoing donation made to a project.
         4)WWDS system display form asking User to fill cargoID
