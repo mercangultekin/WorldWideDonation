@@ -15,4 +15,6 @@ Flow Of Events :
 9) After Jane satisfied with her change(s), Jane selects "Save Edit".
 10) WWDS send a nortification to Adam. After Adam view his nortification, he views the modified "Hurricane Victims Donation" page.
 11) Adam selects on "Approve Changes".
-12) System reuploads the project to WWDS system and Jane is directed to homepage by WWDS system.
+12) System reuploads the project to WWDS system and send notification to Jane and show the preview of her recent state of her project.
+13) Jane saw the message send by WWDS and then she clicks "Ok" button.
+14) WWDS redirect Jane to WWDS homepage.
