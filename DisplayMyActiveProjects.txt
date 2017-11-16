@@ -5,7 +5,7 @@ Communicates With WWDS
 Entry Condition : User should login to system
                   User should click on "Display My Active Projects" button
 Flow of Events : 
-1) User clicks "Display Started Projects".
+1) User clicks "Display Started Projects button".
   2) System displays the list of the project that user has started.  
 Exit Condition : User successfully views the list of the projects that s/he started.
 
