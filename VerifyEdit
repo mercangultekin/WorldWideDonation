@@ -1,0 +1,31 @@
+Use Case Name:Verify Edit
+
+Participating Actor(s):Admin-Initiates
+
+Entry Condition:Admin must be logged in.
+
+Exit Condition:Approve a project.
+
+Flow of Events:
+
+1)Admin clicks on "Verify Edit" button.
+	2)System displays a list of projects waiting for approval.
+3)Admin clicks on a project to read it's details.
+	4)System displays the details of that project.
+5)Admin approves the project by clicking on "Approve Edit Button" 
+	6)System closes the project's details and displays a message that saying "Project Edit is Approved".
+7)Admin clicks on "OK" button.
+	8)System closes the message and displays the list of waiting projects again.
+
+
+Alternative Flows:
+
+5.a)Admin rejects the project by clicking on "Reject Edit Button".
+	6.a)System closes the project's information and displays a message that saying "Project Edit is Rejected".
+	The rest is same.
+
+Exceptions:
+
+2.1)There are no projects waiting for an approval so the list appears empty.Use case ends here.
+
+8.1)There are no projects left to approve so the list appears empty.Use case ends here.
