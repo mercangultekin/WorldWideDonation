@@ -1,0 +1,22 @@
+Usecase Name : EditMyActiveProject
+Participating Actors: User as Initiator
+Entry Condition: The project about to Edit should be in the system and created by the user.
+
+                 
+Flow of Events : 
+1) User clicks on the "EditMyActiveProject Button" 
+   2) WWDS directs user to "Edit My Active Project Page". System list Projects created by the User about to be edited.
+3) User selects one of his/her project.
+   4) WWDS directs user to User's project page to be edited. User is directed to "Project Edition Page".
+5) In the "Project Edition Page", User can either change Project's "Project Profile Picture", "Project Description", "Items Needed for The Project"
+   and "Project Pictures". After User made changes, User clicks on "Save Edit".
+   6) WWDS send "Modified Project" to Admin.
+7) Admin clicks on "Verify Edit Button".
+   8) WWDS list the "Modified Project" to approved to Admin
+9) Admin select the "Modified Project" made by that User.
+  10) WWDS view the "Modified Project" to Admin
+11) Admin clicks on "Approve Edit Button". 
+  12) WWDS sends notification message to User.
+13) User gets a notification message says "Editing is verified by admin" and shows display of the project. User clicks on "Ok" button.
+
+Exit Condition : User successfully make edit on his/her projects.
