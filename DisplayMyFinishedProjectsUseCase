@@ -6,7 +6,7 @@ Entry Condition : User clicks on "Display My Profile Page button" first.
 Flow of Events : 
 1) User clicks on the "My Finished Projects button" 
    2) WWDS displays the list of project that are finished. When items needed for
-   the project is satisfied, project is finished. Finished project added to DiplayMyFinishedProjects.
+   the project is satisfied, project is finished. Finished project added to "Display my Finished Projects Page".
 
 Exit Condition : User will see his/her finished projects successully. 
 
