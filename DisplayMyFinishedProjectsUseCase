@@ -4,7 +4,7 @@ Participating Actors : User as Participant
 Entry Condition : User clicks on "Display Profile" first.
 
 Flow of Events : 
-1) User clicks on the "My Finished Projects" 
+1) User clicks on the "My Finished Projects button" 
    2) WWDS displays the list of project that are finished. When items needed for
    the project is satisfied, project is finished. Finished project added to DiplayMyFinishedProjects.
 
