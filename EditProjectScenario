@@ -6,7 +6,7 @@ Flow Of Events :
 2) She logs-in to WWDS system. 
 3) "Start Project","Edit My Project","Donate","Logout","Display Profile", "Search",
 "Display Ongoing Donations","Display My Active Projects" buttons become enabled and "Sign-in" button is disabled.
-4) She clicks on "Edit My Project" button. 
+4) She clicks on "Edit My Project Button". 
 5) WWDS system direct user to list of projects to be edited. She clicks on of her project to edit called "Hurricane Victims Donation".
 6)  WWDS opens her "Hurricane Victims Donation" donation page to be edited. Make "Project Profile Picture", 
 "Project Description","Items Needed for The Project"," Project Pictures" are editable. "Save Edit" option button is available.
