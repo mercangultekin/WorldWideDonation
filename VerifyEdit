@@ -2,7 +2,7 @@ Use Case Name:Verify Edit
 
 Participating Actor(s):Admin-Initiates
 
-Entry Condition:User should made an Edit on his/her project and send the modified project to admin.
+Entry Condition:User should made an Edit on his/her project and send the "Modified Project" to admin.
                 Admin must be logged in.
 
 Exit Condition:Approve a project.
