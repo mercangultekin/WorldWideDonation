@@ -18,5 +18,6 @@ Flow of Events :
 11) Admin clicks on "Approve Edit Button". 
   12) WWDS sends notification message to User.
 13) User gets a notification message says "Editing is verified by admin" and shows display of the project. User clicks on "Ok" button.
+  14) WWDS redirect User to homepage.
 
 Exit Condition : User successfully make edit on his/her projects.
