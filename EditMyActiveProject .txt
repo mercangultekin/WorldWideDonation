@@ -6,7 +6,7 @@ Prerequisite Condition : User should logged-in and select "Edit My Active Projec
        
 Flow of Events : 
  
-1) User clicks on "Edit project" button.
+1) User clicks on "project button".
     2) WWDS system direct user to list of projects to be edited.
  3) User clicks on the "project link buttton to be edited".
     4) WWDS directs User to project page with editing option for each fields in the "DisplayProjectInformation".
