@@ -4,8 +4,8 @@ Participating Actor Instance(s):Trevor-Admin
 
 Flow Of Events:
 
-1)Trevor enters the WWDS and logs in.
-2)Trevor sees a notification on his screen and clicks on it.
+1)Trevor enters the WWDS and logs in and sees the home page of the WWDS.
+2)Trevor clicks on display pending projects button on the top of the home page.
 3)Trevor sees a page which contains a list of project names which are waiting for an approval.
 4)Trevor clicks on "Let's kill our teacher!".
 5)Trevor reads the information written about the project and doesn't like it.
