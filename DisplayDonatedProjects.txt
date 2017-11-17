@@ -1,6 +1,6 @@
 Usecase Name : DisplayDonatedProjects
 Participating Actors: User as Initiator
-Entry Condition: User should clicks on "Display Profile" first.
+Entry Condition: User should click on "Display Profile" first.
 
                  
 Flow of Events : 
