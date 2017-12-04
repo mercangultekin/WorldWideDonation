@@ -1,0 +1,18 @@
+
+
+* WWD system is designed to be used easily. Any user who knows their Username and password can use the system and perform operations.
+
+* User interface should be designed for any user to accomplish their operations with basic, simple and understandable steps. In addition to 
+  the registered users, visitor users can use search and information parts.
+
+* The system should not allow unauthorized users to access user information and operations. To maintain the security of the system, 
+  the system is designed as not accessible to operations that are offered to users without login into the accounts by exclusive Username 
+  and Password.
+
+* The system can handle expected exceptions such as invalid input by showing the user a related message and asking the user to enter the 
+  input again.
+  
+* To avoid any discomfort, the system should keep the persistent data correctly.
+
+* The system architecture is designed to be readable by other programmers. Because of the subsystem decomposition, it is easy to adapt 
+  changes and new functions without the much need of recompile the code.
