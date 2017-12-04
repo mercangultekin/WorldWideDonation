@@ -1,0 +1,6 @@
+ 
+In this section we will introduce a main structure of the system and describe the main aspects of the design how system will perform. 
+This section also provides a short explanation about each component and process to be developed under the Worldwide Donation System project.
+So this section includes, decomposition of the main system into subsystem, how these subsystems connect with each other, data management, 
+access control, control flow and boundary conditions of the system in case of errors and characteristics of the services provided by the 
+subsystem. 
