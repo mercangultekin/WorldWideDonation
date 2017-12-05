@@ -1,8 +1,16 @@
-
+Important terms and concepts are listed here.  
+ 
 API: An application program interface (API) is code that allows two software programs to communicate with each other 
   
 SDD: System Design Document 
+ 
+SYSTEM: Any interactions performed by the application are considered to be performed by the system. 
   
 MSSQL: Short for Microsoft SQL Server. It is a relational web hosting database that is used to store web site information. 
   
-MVC: The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. 
+MVC: The Model-View-Controller (MVC) architectural pattern separates an application into three main components:
+the model, the view, and the controller. 
+ 
+MODEL: A schematic description of a system that accounts for its known or inferred properties. 
+ 
+VIEW: A visual representation of a model which might. 
