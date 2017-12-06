@@ -1,0 +1,9 @@
+User Management Subsystem:
+  Basic operations done in this subsystem for supporting functions that users perform.
+  This subsystem also provides authentication service for any other subsytem that needs authentication for an operation.
+Donation Management Subsytem:
+  Provides sundry services for operations that are related with donations.
+ Project Management Subsytem:
+  Project proccesses are handled in this subsystem.
+Storage Management Subsystem:
+  This subsystem is basically an abstraction layer for actual storage unit in order to make the system indepent from database language changes.
