@@ -5,6 +5,8 @@ API: An application program interface (API) is code that allows two software pro
 SDD: System Design Document 
  
 SYSTEM: Any interactions performed by the application are considered to be performed by the system. 
+
+SQL: Structured Query Language 
   
 MSSQL: Short for Microsoft SQL Server. It is a relational web hosting database that is used to store web site information. 
   
@@ -14,3 +16,5 @@ the model, the view, and the controller.
 MODEL: A schematic description of a system that accounts for its known or inferred properties. 
  
 VIEW: A visual representation of a model which might. 
+
+HTTP: Hypertext Transfer Protocol 
