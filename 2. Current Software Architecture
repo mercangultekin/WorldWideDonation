@@ -1,0 +1,9 @@
+Our system has 3-layered software architecture, which consist of Model-View-Control approach.   
+The model-view-controller (MVC) style decouples data access (entity objects) and data presentation (boundary objects).  
+Subsystems are classified into three different types:  
+–    Model subsystems maintain domain knowledge, do not depend on any view or controller subsystem. (*Entity objects) 
+–    View subsystems display it to the User (*Boundary objects) 
+–    Controller subsystems manage the sequence of interactions with the User. (*Control objects) 
+ A special case of the repository where Model implements the central data structure and Control objects dictate the control flow. MVC is 
+ well suited for interactive systems, especially when multiple views of the same model are needed.MVC can be used for maintaining consistency
+ across distributed data. 
