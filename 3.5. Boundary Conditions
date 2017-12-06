@@ -1,0 +1,22 @@
+Start Up: When the system is first deployed to a web server it is started by the developers of the system. By this operation system already
+has an administrative account added to database by manually. Client is given this admin account if requests. After these operations the 
+system is started and user only has to visit the web page of the WWDS on his/her device. 
+ 
+Shut Down: When shutdown requested by admin, the server terminates all ongoing operations shuts down the system. No data gets corrupted. 
+All critical and crucial data are stored in system database. 
+ 
+In WWDS, five major exceptions might be arisen: 
+ 
+    Invalid input exception in which the input entered by the Users during transactions does not match the wanted conditions. 
+  
+    Non-existence of the input exception in which the input entered by the Users during transactions does not exist in the system. 
+  
+    Already exist/selected input exception in which the transaction performed by the Users has already performed.  
+  
+    Incomplete input exception in which the input entered by the Users during transactions is not sufficient to end the transaction successfully. 
+  
+    Server crashes exception in which WWDS server is unexpectedly terminated. 
+ 
+ 
+ We decided to handle the first four, input related, exceptions as showing a message that explains the failure of the transaction to the 
+ Users. Then the system will ask the Users to enter the correct input to end the operation successfully. 
