@@ -1,14 +1,15 @@
+ 4.    Subsystem Services 
+
+We have four different subsystems mentioned in System Decomposition section. 
+Each of subsystems contain component and component's service(s). In this 
+section, Subsystems, their component, their services, which component provide which services and which component 
+require which services briefly. 
+
 User Management Subsystem:  
 
-    User Management Subsystem manages the users in the system whether if the user is registered user or nonregistered user. This subsystem contains components such as Login,  
-
- 
-
- 
-
- 
-
-Register, Profile Creator and User Operations. Components of each subsystem's services are described below.  
+    User Management Subsystem manages the users in the system whether if the user is registered user or nonregistered user. 
+    This subsystem contains components such as Login, Register, Profile Creator and User Operations. 
+    Components of each subsystem's services are described below.  
 
  
 
@@ -16,11 +17,12 @@ Register, Profile Creator and User Operations. Components of each subsystem's se
 
  
 
-    This component is about login process. 
+    This component logs the User in. 
 
     
 
-   1) Authentication: This service is provided by login component and required by Profile Creator subsystem. Users of WWDS system login process or authentication process handled by Authentication service. 
+   1) Authentication: This service is provided by login component and required by Profile Creator subsystem. 
+   Users of WWDS system login process or authentication process handled by Authentication service. 
 
  
 
@@ -30,7 +32,7 @@ Register, Profile Creator and User Operations. Components of each subsystem's se
 
       
 
-      This component is about register User to WWDS after User registration information given by user is stored in the WWDS database. 
+      This component register User to WWDS after User registration information given by user is stored in the WWDS database. 
 
  
 
@@ -40,35 +42,38 @@ Register, Profile Creator and User Operations. Components of each subsystem's se
 
      
 
-     Profile Creator is about displaying information about profile information. 
+     Profile Creator component display information about User profile 
 
    
 
- 1) Profile Display:  Profile Creator component load Profile Page and displays it to User. Profile Creator component provide Profile Display service and User Operations component require this service. 
+ 1) Profile Display:  Profile Creator component load Profile Page and displays it to User. 
+ Profile Creator component provide Profile Display service and User Operations component require this service. 
 
  
 
 Project Management Subsystem:  
 
-  Project Management Subsystem concerns with creating project and editing project. This subsystem also requires services such as Project Verification and Store Project.  
+  Project Management Subsystem concerns with creating project and editing project. 
+  This subsystem also requires services such as Project Verification and Store Project.  
 
   
-
- 
-
 1) Project Creator:  
 
+       
+
+   Project Creator component let user create and edit his/her own project. 
+
     
 
-   1) Project Creation: This service is about registered user creating new donation projects. It is provided by Project Creator subsystem component and required by User Operations subsystem component.  
+   1) Project Creation: This service is about registered user creating new donation projects. 
+   It is provided by Project Creator subsystem component and required by User Operations subsystem component.  
 
     
 
  
 
- 
-
-  2) Project Editing: This service is about editing existing project created by the User.  This service provided by Project Creator subsystem component. and required by User Operations subsystem component. 
+  2) Project Editing: This service is about editing existing project created by the User.  
+  This service provided by Project Creator subsystem component. and required by User Operations subsystem component. 
 
  
 
@@ -96,15 +101,33 @@ Both of these services provided by Project Management Subsystem and required by 
 
    
 
-   This subsystem contains two components. One is Donation Creator and other is Donation Tracker. Donation Creator component provide one service called Start Ongoing Donation. This component is about starting donation process. Donation Tracker component provide two services called Track Cargo and Complete Donation.  
+   This subsystem contains two components. One is Donation Creator and other is Donation Tracker. Donation Creator component provide one service called Start Ongoing Donation.  Donation Tracker component provide two services called Track Cargo and Complete Donation.  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
  
 
 1) Donation Creator: 
 
-  
+   
 
- 1)  Start Ongoing Donation: This service starts a new donation process. When donation process starts by the User, Donation creator component provide Start Ongoing Donation Service and the service is acknowledged by User Operations component.  
+  This component let user start his/her own donation.       
+
+ 
+
+ 1)  Start Ongoing Donation: This service starts a new donation process. Donation process initiated by User. When donation process begun by the User, Donation creator component provides Start Ongoing Donation Service and the service is acknowledged by User Operations component.  
 
  
 
@@ -112,17 +135,17 @@ Both of these services provided by Project Management Subsystem and required by 
 
  
 
-   This component is about tracking the donation process initiated by the User. Here two services provided by this component will be discussed.  
+   This component able User either track his/her donation process or his/her finish the donation process. Here, two services provided by this component will be discussed.  
 
    
 
-  1) Complete Donation: This service is about completing the donation process already initiated by the User. Provided by Donation Tracker component and required by User Operations component. When User complete donation, donation tracker initiates Complete  
+  1) Complete Donation: This service completes the donation process already initiated by the User. User can track his/her donation and begin to donation completion process. Provided by Donation Tracker component and required by User Operations component. When User complete donation, donation tracker initiates Complete  
 
 Donation service. User Operations component require Complete Donation.  
 
  
 
-  2) Track Cargo: This service is about User tracking his/her cargo. When User wants to track his/her cargo Donation Tracker component provides Track Cargo service to Profile Creator. Profile Creator component requires Track Cargo Service. 
+  2) Track Cargo: This service able User tracking or view his/her cargo send as donation. When User wants to track his/her cargo, Donation Tracker component provides Track Cargo service to Profile Creator. Profile Creator component requires Track Cargo Service. 
 
  
 
@@ -130,7 +153,7 @@ Storage Management Subsystem:
 
  
 
-  Storage Management Subsystem is about providing storage services to system. Every information or data about the system related with this Storage Management Subsystem. This subsystem has three different components. User Storage, Donation Storage and Project Storage. In addition, this subsystem's services are not only store data also these services able user of the WWDS system can gather data from Storage Management Subsystem. 
+  Storage Management Subsystem provide data management services to system. Every information or data about the system are related with this Storage Management Subsystem. This subsystem has three different components. User Storage, Donation Storage and Project Storage. In addition, this subsystem's services are not only store data also these services able user of the WWDS system can gather data from Storage Management Subsystem. 
 
  
 
@@ -142,11 +165,27 @@ Storage Management Subsystem:
 
  
 
-  1) Store Ongoing Donation: Store data about ongoing donation information. This service makes system store information about recently started donation. Donation Storage provides Store Ongoing Donation component and required by Donation Creator component. 
+   This component manages data about each User's ongoing donation. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  1) Store Ongoing Donation: Store data about ongoing donation information. This service makes system store information about recently started donation. Donation Storage provide Store Ongoing Donation service and the service is required by Donation Creator component. 
 
  
 
  2) User Storage: 
+
+ 
+
+   User storage stores information about User. We can gather information from User Storage as well. 
 
  
 
@@ -166,13 +205,17 @@ Storage Management Subsystem:
 
  
 
+Project Storage component manage data about each individual project. 
+
+ 
+
     1)  Store Project: When project creation is done and verified, information about project is stored in the database. Provided by Project Storage component and required by Project Creator.  
 
  
 
   
 
-  2)  Store Cargo:  Stores data about cargo send by User. Provided by Project Storage component and required by Donation Tracker component. 
+  2)  Store Cargo:  Manages data about cargo send by User. Cargo can be stored in database or User who received the cargo, can gather information from database. Provided by Project Storage component and required by Donation Tracker component. 
 
  
 
