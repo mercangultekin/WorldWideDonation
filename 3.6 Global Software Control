@@ -1,0 +1,43 @@
+ 
+
+In this project we will use the Model View Control approach. User enter his/her data. 
+Controller initiate model. After that, data gained from model is viewed in the WWDS system web site.  
+
+ 
+
+   Since our system is interactive web site, it would be suitable to use MVC.
+   Also, Visual Studio which is the environment we work with is compatible with Model View Controller.  
+
+ 
+
+  Donation Management Subsystem and Project Management Subsystem are very important for WWDS system. 
+  In total, both of these subsystems contain services which make base of the WWDS system. For example, Donation Manage Subsystem provide service called Start Ongoing Donation which is a service about starting donation which is primary concern of the WWDS system. Project Management Subsystem provide a service called Project Creation service which is about creating new donation project. Further details about Project Management Subsystem and Donation Management Subsystem and their services will be discussed in Section 4.  
+
+ 
+
+  User Management Subsystem handle User operations and more importantly synchronize with 
+  Donation Management Subsystem and Project Management Subsystem but User Management Subsystem 
+  synchronized with them separately because Donation Management Subsystem and Project Management Subsystem
+  have different purpose and both of them are independent subsystem. 
+
+ 
+
+  User Management Subsystem depends on other subsystems very highly. That means User Management 
+  Subsystem have very high concurrency which will should make us cautious when we implement Donation Management 
+  Subsystem and implement Project Management  Subsystem otherwise system would not work as way it should.  
+
+ 
+
+ 
+
+  Storage Management Subsystem provide storage services to User Management Subsystem, 
+  Donation Management Subsystem and Project Management Subsystem. That way, we manage to create another 
+  synchronization. Storage Management Subsystem store information from every subsystem. 
+
+ 
+
+ 
+
+User Management Subsystem, Donation Management Subsystem and Project Management Subsystem dependent on 
+Storage Management Subsystem because Storage Management Subsystem deals with storage of entire information management of the 
+system which is incredibly important.  
