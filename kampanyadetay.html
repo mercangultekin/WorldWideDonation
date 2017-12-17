@@ -1,0 +1,151 @@
+
+@{
+    ViewBag.Title = "KampanyaDetay";
+}
+@model WWD.Models.Kampanya
+
+<!-- Css Files -->
+<link href="/Content/css/bootstrap.css" rel="stylesheet">
+<link href="/Content/css/font-awesome.css" rel="stylesheet">
+<link href="/Content/style.css" rel="stylesheet">
+
+<div class="as-main-content">
+
+    <!--// MainSection //-->
+    <div class="as-main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <figure class="as-cause-thumb"><span class="full-pattren"></span><a href="#"><img src="#" alt=""></a></figure>
+                    <div class="as-detail-strip">
+                        <div class="as-causes-strip">
+                            <div data-percent="90%" class="causes-sec">
+                                <div class="as-causebar">
+                                    <div style="width:90%;" class="percent-bar"><small>90%</small></div>
+                                </div>
+                            </div>
+                            <span class="as-raised">Raised: $1540</span>
+                            <span class="as-goal">Goal: $2000</span>
+                        </div>
+                        <a href="#dona" class="as-causes-btn as-bgcolor">Donate Now</a>
+                    </div>
+                    <div class="as-detail-editor">
+                        <h2></h2>
+                        <p></p>
+
+                    </div>
+                    <form method="post" action="/#">
+                        <div class="form-horizontal">
+                            <table class="table table-hover" id="dona">
+                                <thead>
+                                    <tr>
+                                        <th>Stuff</th>
+                                        <th>Amount You Donate</th>
+                                        <th>Unit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   
+                                            <tr>
+                                                <td> <input name="StuffID" value="" class="hidden" />   </td>
+                                                <td> <input type="number" class="form-control" placeholder="Quantity" name="GonderiMiktari" /></td>
+                                                <td> <input name="KampanyaID" value="" class="hidden" /> </td>
+                                            </tr>
+                                          
+                                    
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <button type="submit">Donate</button>
+                    </form>
+
+                    <ul class="as-share-nav">
+                        <li><span>Share Via:</span></li>
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        <li><a href="#" class="fa fa-pinterest-p"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                    </ul>
+
+                </div>
+                <aside class="col-md-3">
+                    <!--// Widget Categories //-->
+                    <div class="widget widget_categories">
+                        <div class="as-strip-title"> <h2>CATEGORY <span class="as-color">WIDGET</span></h2> </div>
+                        <ul>
+                            
+                                <li><a href="#"></a></li>
+                            
+
+                        </ul>
+                    </div>
+                    <!--// Widget Categories //-->
+                    <!--// Widget RecentPost //-->
+                    <div class="widget widget_recent_post">
+                        <div class="as-strip-title"> <h2>RECENT <span class="as-color">POST</span></h2> </div>
+                        <ul>
+                            <li>
+                                <figure>
+                                    <a href="#" class="as-thumb"><img src="/Content/extra-images/recent-post1.jpg" alt=""> <span class="fa fa-angle-double-right as-hover-icon"></span></a>
+                                    <figcaption>
+                                        <h4><a href="#">Democratic Republic</a></h4>
+                                        <p>This is Photoshop's version  of Lorem Ipsum. enim.</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a href="#" class="as-thumb"><img src="/Content/extra-images/recent-post2.jpg" alt=""> <span class="fa fa-angle-double-right as-hover-icon"></span></a>
+                                    <figcaption>
+                                        <h4><a href="#">Democratic Republic</a></h4>
+                                        <p>This is Photoshop's version  of Lorem Ipsum. enim.</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a href="#" class="as-thumb"><img src="/Content/extra-images/recent-post3.jpg" alt=""> <span class="fa fa-angle-double-right as-hover-icon"></span></a>
+                                    <figcaption>
+                                        <h4><a href="#">Democratic Republic</a></h4>
+                                        <p>This is Photoshop's version  of Lorem Ipsum. enim.</p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// Widget RecentPost //-->
+                </aside>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                 
+                        <div class="as-event-gallery">
+                                <h2>Causes <span class="as-color">Gallery</span></h2>
+                                <ul class="gallery">
+                                  
+                                    <li>
+                                        <div class="as-event-gallery-wrap">
+                                            <img src="#" alt="">
+                                            <a href="#" rel="prettyPhoto[gallery1]" title=""><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </li>
+                                  
+
+                                </ul>
+                            </div>
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// MainSection //-->
+</div>
+
+
+
+<div class="clearfix"></div>
+
