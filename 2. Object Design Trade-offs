@@ -1,0 +1,23 @@
+Reliability
+We tested all the steps of the software, we developed it with different inputs and tried to improve the experience of the user by fixing 
+all the mistakes. We tested the system after every new feature we added. When we encountered any problem, we figured out where we made a 
+mistake.
+
+Expandability
+While designing our system, we paid attention to extensibility. Thanks to its modular structure, our system is ready for new technologies 
+that can be added later.
+
+Programmability
+In our project, we tried to create a simple, functional product using the ASP.NET Framework. The reason we use the Framework is that simple
+operations such as logging in and signing up are readily available and accordingly we can spend more time on other important parts of the 
+software.
+
+Availability
+Availability is the ratio of time a system or component is functional to the total time it is required or expected to function. The system 
+we developed must be accessible 24/7 and we designed it this way.
+
+Compatibility
+Another reason why we use the ASP.NET MVC framework in our project is that it helped us about compatibility and it has provided us with 
+the following advantages:
+It made  easier to manage the mix by dividing the application into model, view, and controller
+It was better support for test-based development.
