@@ -1,0 +1,31 @@
+A package is a grouping mechanism for organizing elements into groups to increase their readability. In other words, it is a grouping of 
+model elements, such as use cases, or activities, defining scopes of understanding. Packages are used to deal with complexity in the same 
+way a user organizes files and subdirectories into directories.
+
+Models:
+aspnet_Applications.cs
+aspnet_Membership.cs
+aspnet_Paths.cs
+aspnet_PersonalizationAllUsers.cs
+aspnet_PersonalizationPerUser.cs
+aspnet_Profile.cs
+aspnet_Roles.cs
+aspnet_SchemaVersions.cs
+aspnet_Users.cs
+aspnet_UsersInRoles.cs
+aspnet_WebEvent_Events.cs
+Donate.cs
+DonationDB.cs
+Kampanya.cs
+Kategori.cs
+Kullanici.cs
+Resim.cs
+Stuff.cs
+
+Controllers:
+HomeController.cs
+KampanyaController.cs
+KategoriController.cs
+KullaniciController.cs
+SearchController.cs
+YonetimController.cs
