@@ -1,0 +1,7 @@
+Model: A Model class of MVC Architectural pattern.
+View : A visual representation of a model which might
+Controller : The controller translates interactions with the view into actions to be performed by the model.
+DBMS : Database Management System
+HTTP : A protocol for secure communication over a computer network which is widely  used on the Internet.
+ODD : Object Design Document
+PACKAGE: A UML grouping concept denoting that a set of objects or classes are related.
