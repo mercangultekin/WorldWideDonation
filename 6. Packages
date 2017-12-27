@@ -2,6 +2,35 @@ A package is a grouping mechanism for organizing elements into groups to increas
 model elements, such as use cases, or activities, defining scopes of understanding. Packages are used to deal with complexity in the same 
 way a user organizes files and subdirectories into directories.
 
+Views : 
+
+Home : 
+Index.cshtml
+Kampanya : 
+Index.cshtml
+KampanyaDetay.cshtml
+Yenile.cshtml
+Kategori : 
+Index.cshtml    
+KategoriDetay.cshtml
+Kullanıcı : 
+Index.cshtml
+Search : 
+Index.cshtml
+Shared : 
+_AdminLayout.cshtml
+_Layout.cshtml
+Yonetim : 
+Bekleyenler.cshtml              
+Bitenler.cshtml                
+DevamEdenler.cshtml
+Giris.cshtml
+Index.cshtml               
+Kayıt.cshtml 
+Reset.cshtml 
+RolEkle.cshtml
+
+
 Models:
 aspnet_Applications.cs
 aspnet_Membership.cs
@@ -29,3 +58,13 @@ KategoriController.cs
 KullaniciController.cs
 SearchController.cs
 YonetimController.cs
+
+
+In our project we have used Model View Controller approach. This kind of approach used when developers develop their project in 
+Visual Studio environment which we have used. When user makes an entry, then information sends to controller. 
+Controller direct this information to model package. Our models contain information about domain object. 
+Therefore, Model Package is about managing the database. In our View package, html documents are being held. 
+These HTML provide users the UI. Since they aren't classes but only files, HTML files weren't added into our 
+package diagram. Controller package also used to "direct" users to pages. For example, when User visits the website, 
+HTML file of the WWDS project will be shown by the HomeController class by returning the view of the HTML file.
+
