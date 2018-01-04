@@ -31,3 +31,31 @@ C:\Users\alial\Documents\Visual Studio 2015\Projects\WWD\WWD\bin\System.Web.Mvc.
 C:\Users\alial\Documents\Visual Studio 2015\Projects\WWD\WWD\obj\Debug\WWD.csprojResolveAssemblyReference.cache
 C:\Users\alial\Documents\Visual Studio 2015\Projects\WWD\WWD\obj\Debug\WWD.dll
 C:\Users\alial\Documents\Visual Studio 2015\Projects\WWD\WWD\obj\Debug\WWD.pdb
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\ApplicationInsights.config
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\csc.exe
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\vbc.exe
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\VBCSCompiler.exe
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\WWD.dll.config
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\WWD.dll
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\WWD.pdb
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\EntityFramework.xml
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\EntityFramework.SqlServer.xml
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\System.Web.Razor.xml
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\System.Web.Webpages.xml
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\System.Web.Webpages.Razor.xml
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\System.Web.Helpers.xml
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\bin\System.Web.Mvc.xml
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\obj\Debug\WWD.csprojResolveAssemblyReference.cache
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\obj\Debug\WWD.dll
+C:\Users\Erdal\Source\Repos\WorldWideDonation\WWD\obj\Debug\WWD.pdb

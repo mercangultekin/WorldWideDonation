@@ -465,6 +465,8 @@
     <Content Include="Content\admin\assets\plugins\NotificationStyles\fonts\linecons\lineconsd41d.eot" />
     <Content Include="Views\Search\Index.cshtml" />
     <Content Include="Views\Kategori\Yukle.cshtml" />
+    <Content Include="Views\Yonetim\AddedBekleyenler.cshtml" />
+    <Content Include="Views\Yonetim\AddedBekleynelerDetay.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
