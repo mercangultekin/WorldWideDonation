@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "EditBekleyenlerDetay";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model WWD.Models.Kampanya
+<div class="container-fluid">
+    <div class="row">
+        <div class="container" style="background-color:white">
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Project Name</th>
+                                <th>New Profil Photos</th>
+                                <th>New Stuffs</th>
+                                <th>Ex Stuffs</th>
+                                <th>New Explanation</th>
+                                <th>Approvement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="/Kampanya/KampanyaDetay/@Model.KampanyaId">@Model.Adi</a></td>
+                                <td>
+                                    <div class="as-event-gallery-wrap">
+                                        <img src="@ViewBag.resim" alt="">
+                                        <a href="@ViewBag.resim" rel="prettyPhoto[gallery1]" title=""><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </td>
+                                <td>
+
+                                    @ViewBag.yeni , @ViewBag.yeni2 , @ViewBag.yeni3
+
+                                </td>
+                                <td> @ViewBag.eskistuff , @ViewBag.eskistuff1 , @ViewBag.eskistuff2 </td>
+
+
+                                <td><p>ViewBag.acik</p></td>
+
+
+
+                                <td><button data-di="@Model.KampanyaId" id="ok" class="ok">OK</button><button class="btn-glyphicon delete" data-di="@Model.KampanyaId" id="delete">X</button></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/Content/admin/assets/plugins/jQuery/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script>
+
+        $(document).ready(function myfunction() {
+            $('.ok').click(function myfunction() {
+                var id = $(this).data("di");
+                alert("sdfdf")
+                    {
+                        $.ajax({
+                            type: 'POST',
+                            url: '/Kampanya/editok/' + id,
+                            data: id,
+                            cache: false,
+                            contentType: false,
+                            processData: false,
+                            success: function myfunction() {
+                                alert("Edited");
+                                window.location.replace("");
+                            },
+                            error: function myfunction() {
+                                alert("Bir hata oluştu...");
+                                window.location.reload();
+                            }
+                        });
+                    }
+                });
+
+            $('.delete').click(function myfunction() {
+                var id = $(this).data("di");
+                {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/Kampanya/editdelete/' + id,
+                        data: id,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function myfunction() {
+                            alert("Deleted");
+                            window.location.reload();
+                        },
+                        error: function myfunction() {
+                            alert("Bir hata oluştu...");
+                            window.location.reload();
+                        }
+                    });
+                }
+            });
+
+
+            });
+
+
+
+
+
+</script>
+
