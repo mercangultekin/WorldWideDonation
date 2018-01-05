@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "EditBekleyenlerDetay";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model WWD.Models.Kampanya
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="container" style="background-color:white">
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Project Name</th>
+                                <th>New Stuffs</th>
+                                <th> Quantity</th>
+                                <th> Unit</th>
+                                <th> New Photos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="/Kampanya/KampanyaDetay/@Model.KampanyaId">@Model.Adi</a></td>
+                                <td>
+                                    <ul style="">
+                                        @if (ViewBag.stfname != null)
+                                        {
+                                            foreach (var item in ViewBag.stfname)
+                                            {
+                                                <li>@item</li>
+
+                                            }
+                                        }
+
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul style="">
+                                        @if (ViewBag.biri != null)
+                                        {
+                                            foreach (var item in ViewBag.biri)
+                                            {
+                                                <li>@item</li>
+
+                                            }
+                                        }
+
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul style="">
+
+                                        @if (ViewBag.rer != null)
+                                        {
+                                            foreach (var item in ViewBag.mik)
+                                            {
+                                                <li>@item</li>
+
+                                            }
+                                        }
+
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul style="">
+
+                                        @if (ViewBag.rer != null)
+                                        {
+                                            foreach (var item in ViewBag.res)
+                                            {
+                                                <li>@item</li>
+
+                                            }
+                                        }
+
+                                    </ul>
+                                </td>
+
+                                <td><a href="/Yonetim/ADDOk1/@Model.KampanyaId">OK</a><a class="btn-glyphicon" href="/Yonetim/AddedDelete/@Model.KampanyaId">X</a></td>
+
+
+
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

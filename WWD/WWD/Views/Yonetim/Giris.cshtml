@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Giris";
+}
+<div class="container-fluid" style="background-color:white;">
+    <div class="container">
+        <h2> <span class="as-color">Log In</span></h2><p style="color:red;font-size:16px;">@ViewBag.mesaj</p>
+        <form action="/Yonetim/Giris" method="post">
+            <p>User Name :</p>
+            <p> <input type="text" name="UserAdi" required class="col-lg-2"> </p>
+            <p>Password :</p>
+            <p> <input type="password"  name="Parola" required class="col-lg-2"> </p>
+            <p class="as-submit"><button class="as-bgcolor col-lg-2" type="submit">Log In</button> </p>
+        </form>
+        <label class="pull-left"><a class='pink-text' href='/Yonetim/Reset'><b>Forgot Password? Click Me</b></a></label>
+    </div>
+</div>

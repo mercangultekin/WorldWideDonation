@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Kayit";
+}
+<div class="container-fluid" style="background-color:white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+             
+                <h2> <span class="as-color">Sign Up </span></h2>
+                @if (ViewBag.mesaj != null)
+                {
+                    <p style="color:red;font-size:16px;">@ViewBag.mesaj</p>
+                }
+                @if (ViewBag.mes != null)
+                {
+                    <p style="color:red;font-size:16px;">@ViewBag.mes</p>
+                }
+
+                <form action="/Yonetim/Kayit" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Name :</p>
+                            <p> <input type="text" required name="KullaniciIsim" class="col-lg-6"> </p>
+                            <p>Surname :</p>
+                            <p> <input type="text" name="KullaniciSoyIsim" required class="col-lg-6"> </p>
+                            <p>User Name :</p>
+                            <p> <input type="text" name="UserAdi" required class="col-lg-6"> </p>
+                            <p>E-mail :</p>
+                            <p> <input type="email" name="Email" required class="col-lg-6"> </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Secret Question :</p>
+                            <p> <input type="text" name="GizliSoru" required class="col-lg-6"> </p>
+                            <p>Secret Answer :</p>
+                            <p> <input type="text" name="GizliCevap" required class="col-lg-6"> </p>
+
+                            <p>Password :</p>
+                            <p> <input type="password" name="Parola" required class="col-lg-6"> </p>
+                            <p>Confirm Password :</p>
+                            <p> <input type="password" name="Parola2" required class="col-lg-6"> </p>
+                        </div>
+
+                    </div>
+                   
+                   
+                    <p class="as-submit"><button class="as-bgcolor col-lg-12" type="submit"> <h4> Sign Up </h4></button> </p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,270 @@
+﻿
+@{
+    ViewBag.Title = "KampanyaDetay";
+}
+@model WWD.Models.Kampanya
+
+<!-- Css Files -->
+<link href="/Content/css/bootstrap.css" rel="stylesheet">
+<link href="/Content/css/font-awesome.css" rel="stylesheet">
+<link href="/Content/style.css" rel="stylesheet">
+<link href="/Content/css/color.css" rel="stylesheet">
+<link href="/Content/css/dl-menu.css" rel="stylesheet">
+<link href="/Content/css/flexslider.css" rel="stylesheet">
+<link href="/Content/css/prettyphoto.css" rel="stylesheet">
+<link href="/Content/css/responsive.css" rel="stylesheet">
+<!-- Color Css Files Start -->
+<link rel="alternate stylesheet" type="text/css" href="switcher/color-one.css" title="color-one" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/color-two.css" title="color-two" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/color-three.css" title="color-three" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/color-four.css" title="color-four" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/color-five.css" title="color-five" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/color-six.css" title="color-six" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/color-seven.css" title="color-seven" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/color-eight.css" title="color-eight" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/color-nine.css" title="color-nine" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/color-ten.css" title="color-ten" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/color-ten.css" title="color-ten" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/pattren1.css" title="pattren1" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/pattren2.css" title="pattren2" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/pattren3.css" title="pattren3" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/pattren4.css" title="pattren4" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/pattren5.css" title="pattren5" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/background1.css" title="background1" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/background2.css" title="background2" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/background3.css" title="background3" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/background4.css" title="background4" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="switcher/background5.css" title="background5" media="screen" />
+
+<!--// Main Wrapper //-->
+<!--// Main Content //-->
+<div class="as-main-content">
+
+    <!--// MainSection //-->
+    <div class="as-main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h1>PROJECT DETAIL PAGE</h1>
+                    <figure class="as-cause-thumb">
+                        <span class="full-pattren"></span><a href="#">
+                            @if (Model.KampanyaFotoB != null)
+                            {
+                                <img src="@Model.KampanyaFotoB" alt="">
+                            }
+                            else
+                            {
+                                <img src="~/Content/images/noi.jpg" alt="">
+                            }
+                        </a>
+                    </figure>
+                    <div class="as-detail-strip">
+
+                        <a href="#dona" class="as-causes-btn as-bgcolor">Donate Now</a>
+                        <label class="as-causes-btn as-bgcolor left-section"><a href="/Kullanici/Index/@Membership.GetUser(Model.Kullanici.UserAdi).ProviderUserKey">By @Model.Kullanici.KullaniciIsim</a></label>
+                        <label class="as-causes-btn as-bgcolor left-section"><i class="icon-calendar"></i>  @Model.BaslamaTarihi.Value.Day / @Model.BaslamaTarihi.Value.Month /@Model.BaslamaTarihi.Value.Year</label>
+
+                    </div>
+                    <div class="as-detail-editor">
+                        <h2>@Model.Adi</h2>
+                        <p>@Model.Aciklama</p>
+
+                    </div>
+                    @if (Model.BasariliMi == true)
+                    {
+                        <p>Successfully Done</p>
+                    }
+                    else
+                    {
+                        <form method="post" id="DuyForm">
+                            <div class="form-horizontal">
+                                <table class="table table-hover" id="dona">
+                                    <thead>
+                                        <tr>
+                                            <th>Stuff</th>
+                                            <th>Amount You Donate</th>
+                                            <th>Unit</th>
+                                            <th>Goal</th>
+                                            <th>Raised</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if (ViewBag.addd != null)
+                                        {
+                                            foreach (WWD.Models.Stuff item in ViewBag.addd)
+                                            {
+                                                <tr>
+                                                    <td> <input name="StuffID" value="@item.StuffId" class="hidden" />    @item.StuffName</td>
+
+                                                    @{
+                                                        int a = item.Miktari;
+                                                        int b = item.KalanMiktar;//giden miktar
+                                                        int c = a - b;
+                                                        if (c == 0)
+                                                        {
+                                                            <td>
+
+                                                                <input type="number" class="form-control" placeholder="No more" name="GonderiMiktari" min="1" disabled />
+                                                            </td>
+                                                        }
+                                                        else
+                                                        {
+                                                            <td>
+
+                                                                <input type="number" id="degisik" class="form-control" placeholder="Quantity- MAX= @c" name="GonderiMiktari" min="1" />
+                                                            </td>
+                                                        }
+
+
+                                                    }
+
+
+                                                    <td> <input name="KampanyaID" value="@item.KampanyaID" class="hidden" /> @item.Birim</td>
+                                                    <td id="oniki" data-oniki="@item.Miktari">@item.Miktari</td>
+                                                    <td id="onuc" data-onuc="@item.KalanMiktar">@item.KalanMiktar</td>
+                                                </tr>
+
+                                                            }
+                                                        }
+
+                                    </tbody>
+                                </table>
+                                <div class="row">
+
+                                </div>
+
+
+
+
+                                <ul style="list-style:none">
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <li><button type="submit" class="as-bgcolor btn btn-large col-sm-4 DuyuruEK" data-deneme="ad">Donate</button></li>
+                                    }
+                                    else
+                                    {
+                                        <li><button type="submit" class="as-bgcolor btn btn-large col-sm-4 DuyuruEK" data-deneme="ad2">Donate</button></li>}
+                                </ul>
+                            </div>
+
+
+
+                    </form>
+                                                        }
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="col-md-9">
+                    @if (ViewBag.fu != null)
+                    {
+                        <div class="as-event-gallery">
+                            <h2>Project <span class="as-color">Gallery</span></h2>
+                            <ul class="gallery">
+                                @foreach (WWD.Models.Resim item in ViewBag.fu)
+                                {
+
+                                    <li>
+                                        <div class="as-event-gallery-wrap">
+                                            <img src="@item.ResimBuyukYol" alt="">
+                                            <a href="@item.ResimBuyukYol" rel="prettyPhoto[gallery1]" title=""><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </li>
+                                }
+
+                            </ul>
+                        </div>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// MainSection //-->
+</div>
+<div class="clearfix"></div>
+@section script{
+    <script>
+        $(document).ready(function myfunction() {
+
+
+
+            $('.DuyuruEK').click(function myfunction() {
+
+                var dataaa = $(this).data("deneme");
+
+                if (dataaa == "ad") {
+                    $('#DuyForm').submit(function myfunction(evt) {
+                        evt.preventDefault();
+                        var formData = new FormData(this);
+
+                        var deg = document.getElementById('degisik');
+                        var dond = deg.value;
+                        var deg2 = document.getElementById('oniki');
+                        var deg21 = deg2.dataset.oniki;
+                        var deg3 = document.getElementById('onuc');
+                        var deg31 = deg3.dataset.onuc;
+                        var deg4 = deg21 - deg31;
+                        if (dond <= deg4) {
+                            $.ajax({
+                                type: 'POST',
+                                url: '/Kampanya/BagisYap',
+                                data: formData,
+                                cache: false,
+                                contentType: false,
+                                processData: false,
+                                success: function myfunction() {
+
+                                    window.location.reload();
+
+                                },
+                                error: function myfunction() {
+                                    alert("Bir hata oluştu...");
+                                    window.location.reload();
+
+                                }
+                            });
+                        } else {
+                            alert("Please enter the correct quantity");
+                            window.location.reload();
+
+
+                        }
+                    });
+                } else {
+                    alert("You should log in");
+                }
+
+
+            });
+
+        });
+    </script>
+    <!--// Main Wrapper //-->
+    <!-- jQuery (necessary for JavaScript plugins) -->
+    <script src="/Content/script/jquery.min.js"></script>
+    <script src="/Content/script/modernizr.js"></script>
+    <script src="/Content/script/bootstrap.min.js"></script>
+    <script src="/Content/script/jquery.dlmenu.js"></script>
+    <script src="/Content/script/flexslider-min.js"></script>
+    <script src="/Content/script/goalProgress.min.js"></script>
+    <script src="/Content/script/jquery.countdown.min.js"></script>
+    <script src="/Content/script/jquery.prettyphoto.js"></script>
+    <script src="/Content/script/waypoints-min.js"></script>
+    <script src="/Content/script/owl.carousel.min.js"></script>
+    <script src="/Content/script/newsticker.js"></script>
+    <script src="/Content/script/parallex.js"></script>
+    <script src="/Content/script/styleswitch.js"></script>
+    <script src="/Content/script/functions.js"></script>
+
+
+
+
+
+}
+
+
+
+

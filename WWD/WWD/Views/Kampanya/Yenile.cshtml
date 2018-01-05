@@ -1,0 +1,207 @@
+﻿
+@{
+    ViewBag.Title = "Yenile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model WWD.Models.Kampanya
+<div class="container-fluid" style="background-color:white;">
+    <div class="as-donation-form">
+
+        <h2>Edit <span class="as-color">INFORMATION</span></h2>
+        <h3 style="text-align:center"><span class="as-color">Project Name :</span>@Model.Adi</h3>
+        <ul class="row">
+            <li class="col-md-3">
+                <div class="as-event-gallery">
+
+                    <h2>Project <span class="as-color activity-primary">Photo</span></h2>
+                    <ul class="gallery">
+
+                        <li style="height:200px;width:200px;">
+                            <div class="as-event-gallery-wrap">
+                                <img src="@Model.KampanyaFotoB" alt="">
+                                <a href="@Model.KampanyaFotoB" rel="prettyPhoto[gallery1]" title=""><i class="fa fa-plus"></i></a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </li>
+            <li class="col-md-3"> <label class="as-color">Change Profil Photo for Project</label><form id="fotoform" method="post" action="/Kampanya/editkaydet/@Url.RequestContext.RouteData.Values["id"]" enctype="multipart/form-data"><input type="file" placeholder="New Foto" name="resim12">  <button type="submit" class="as-bgcolor btn btn-large col-sm-4" id="foto" data-di="@Url.RequestContext.RouteData.Values["id"]">Edit Photo</button>  </form></li>
+            <li class="col-md-6">
+                <label>Stuffs</label>
+                <table class="table" id="dynamic_field">
+                    <thead>
+                        <tr>
+                            <th>Stuff</th>
+                            <th>Quantity</th>
+                            <th>Unit</th>
+                            <th>Change</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (WWD.Models.Stuff item in Model.Stuffs)
+                        {
+
+                            <tr class="stufflist">
+
+                                <td>@item.StuffName<input type="hidden" name="gizlideger" value="@item.StuffId" hidden="hidden" /></td>
+
+                                <td>@item.Miktari</td>
+                                <td>@item.Birim</td>
+                                <td>
+                                    <form method="post" id="stuffeditform" class="stuffeditform">
+                                        <input type="text" name="StuffName" placeholder="Stuff Name" /><input type="number" name="Miktari" min="1" placeholder="Quantity" />
+                                        <input type="hidden" name="gizlideger" value="@item.StuffId" hidden="hidden" />
+                                        <select name="Birim">
+                                            <option disabled>Choose Unit</option>
+                                            <option value="Pieces">Pieces</option>
+                                            <option value="Kg">Kg</option>
+                                            <option value="Oz">Oz</option>
+                                            <option value="Pound">Pound</option>
+                                            <option value="Lt">Lt</option>
+                                            <option value="Ton">Ton</option>
+
+                                        </select>
+                                        <button data-di1="@Url.RequestContext.RouteData.Values["id"]" type="submit" class="as-bgcolor btn btn-large col-sm-4 stuffbuton" id="stuffbuton">Change Stuff</button>
+                                    </form>
+
+                                </td>
+
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </li>
+
+            <li><label class="as-color">Projects Explanation</label><p>@Model.Aciklama</p></li>
+            <li class="col-md-12"> <label>About Campaign:</label><form method="post"><textarea type="text" placeholder="About Campaign:" rows="10" class="form-control" name="Aciklama"> </textarea>   </form><button type="submit" class="as-bgcolor btn btn-large col-sm-3">Change What About It</button></li>
+
+
+
+        </ul>
+
+
+    </div>
+</div>
+@section script{
+    <script>
+        $(document).ready(function myfunction() {
+            var i = 1;
+            $('.addmore').on('click', function myfunction() {
+                i++;
+                $('#dynamic_field').append('<tr class="stufflist" id="row' + i + '"> <td><input type="text" name="StuffName" /></td>  <td><input type="number" name="Miktari" min="1" /></td><td><input type="text" name="Birim" /></td> <td><button name="remove" id="' + i + '" class="btn btn-danger btn-remove hayda">X</button></td></tr>')
+                //  $('tbody').append('<tr class="stufflist" id="row' + i + '"> <td><input type="text" name="StuffName" /></td>  <td><input type="number" name="Miktari" /></td><td><input type="text" name="Birim" /></td> <td><button name="remove" id="'+i+'" class="btn btn-danger btn-remove hayda">X</button></td></tr>');
+            });
+            $(document).on('click', '.btn-remove', function myfunction() {
+                var button_id = $(this).attr("id");
+                $("#row" + button_id + "").remove();
+
+            });
+            var a = 1;
+            $('.addmore2').on('click', function myfunction() {
+                a++;
+                $('#dynamic_field2').append('<tr class="stufflist2" id="row2' + a + '"> <td><input type="file" name="ResimID" /></td> <td><button name="remove" id="' + a + '" class="btn btn-danger btn-remove hayda2">X</button></td></tr>')
+                //  $('tbody').append('<tr class="stufflist" id="row' + i + '"> <td><input type="text" name="StuffName"/></td>  <td><input type="number" name="Miktari"/></td><td><input type="text" name="Birim"/></td> <td><button name="remove" id="'+i+'" class="btn btn-danger btn-remove hayda">X</button></td></tr>');
+            });
+            $(document).on('click', '.btn-remove', function myfunction() {
+                var button_id = $(this).attr("id");
+                $("#row2" + button_id + "").remove();
+
+            });
+        });
+
+
+        $('.stuffbuton').click(function myfunction() {
+            var id = $(this).data("di1");
+            $('.stuffeditform').submit(function myfunction(evt) {
+                evt.preventDefault();
+                var formData = new FormData(this); // $(this).serialize();
+                    //formData = new FormData(this);
+
+                {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/Kampanya/Stuffedit/' + id,
+                        data: formData,//formData $(this).serialize()
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function myfunction() {
+                            alert("Request is sended");
+                            window.location.reload();
+                        },
+                        error: function myfunction() {
+                            alert("Bir hata oluştu...");
+                            window.location.reload();
+                        }
+                    });
+                }
+            });
+
+
+
+        });
+        $('#foto').click(function myfunction() {
+            var id = $(this).data("di");
+            $('#fotoform').submit(function myfunction(evt) {
+                evt.preventDefault();
+                var formData = new FormData(this);
+                {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/Kampanya/Fotoedit/' + id,
+                        data: formData,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function myfunction() {
+                            alert("Request is sended");
+                            window.location.reload();
+                        },
+                        error: function myfunction() {
+                            alert("Bir hata oluştu...");
+                            window.location.reload();
+                        }
+                    });
+                }
+            });
+
+            $('#acikla').click(function myfunction() {
+                var id = $(this).data("di");
+                $('#aciklaform').submit(function myfunction(evt) {
+                    evt.preventDefault();
+                    var formData = new FormData(this);
+                    {
+                        $.ajax({
+                            type: 'POST',
+                            url: '/Kampanya/Acikedit/' + id,
+                            data: formData,
+                            cache: false,
+                            contentType: false,
+                            processData: false,
+                            success: function myfunction() {
+                                alert("Request is sended");
+                                window.location.reload();
+                            },
+                            error: function myfunction() {
+                                alert("Bir hata oluştu...");
+                                window.location.reload();
+                            }
+                        });
+                    }
+                });
+
+
+            });
+
+        });
+
+
+
+    </script>
+
+}

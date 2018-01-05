@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "AddedBekleyenler";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container" style="background-color:white">
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Go to Detail</th>
+                        <th>Acceptance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (ViewBag.eklenenler != null)
+                    {
+                        foreach (WWD.Models.Kampanya item in ViewBag.eklenenler)
+                        {
+                            <tr>
+                                <td><a href="/Kampanya/KampanyaDetay/@item.KampanyaId">@item.Adi</a></td>
+                                <td><a href="/Yonetim/AddedBekleyenlerDetay/@item.KampanyaId">Detail</a></td>
+                                
+
+                            </tr>
+                        }
+                    }
+                    
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

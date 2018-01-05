@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Reset";
+}
+
+
+
+<div class="container-fluid" style="background-color:white;">
+    <div class="container">
+        <h2> <span class="as-color">Reset Password</span></h2>@if (ViewBag.mesaj != null)
+        {
+            <p style="color:red;font-size:16px;">@ViewBag.mesaj</p>
+        }
+        @if (ViewBag.mes != null)
+        {
+            <p style="color:red;font-size:16px;">@ViewBag.mes</p>
+        }
+
+
+        <form action="/Yonetim/Resetle" method="post">
+            <p>User Name :</p>
+            <p> <input type="text" name="UserAdi" required class="col-lg-2"> </p>
+            <p>Secret Question :</p>
+            <p> <input type="text" name="GizliSoru" required class="col-lg-2"> </p>
+            <p>Secret Answer :</p>
+            <p> <input type="text" name="GizliCevap" required class="col-lg-2"> </p>
+            <p>New Password :</p>
+            <p> <input type="password" name="Parola" required class="col-lg-2"> </p>
+            <p>Confirm Password :</p>
+            <p> <input type="password" name="Parola2" required class="col-lg-2"> </p>
+
+            <p class="as-submit"><button class="as-bgcolor col-lg-2" type="submit">Log In</button> </p>
+        </form>
+
+    </div>
+</div>
